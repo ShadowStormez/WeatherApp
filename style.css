@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #333;
+}
+
+.container {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#city {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#searchButton {
+    padding: 10px;
+    font-size: 16px;
+    background: peru;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.weather {
+    margin-top: 20px;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: none;
+}
+
+#temperature {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#description, #humidity, #wind {
+    font-size: 1.2em;
+    color: #555;
+}
