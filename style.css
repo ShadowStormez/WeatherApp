@@ -18,13 +18,21 @@ body {
     text-align: center;
 }
 
+.container * {
+    background: transparent;
+}
+
 .search {
+    position: relative;
     margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 #city {
     padding: 10px;
     font-size: 16px;
+    flex: 1;
 }
 
 #searchButton {
@@ -34,8 +42,32 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    margin-left: 10px;
     border-radius: 5px;
+}
+
+#suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
 }
 
 .weather {
